@@ -1,0 +1,289 @@
+ <!DOCTYPE html> 
+ <html lang="pt-br" xmlns:th="http://www.thymeleaf.org"> 
+ <head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet"  href="/webjars/bootstrap/css/bootstrap.min.css">
+ <title>Cliente</title> 
+    <meta name="autor" content="Jameplay"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    
+ 
+ </head> 
+ 
+     
+  <header th:fragment="cabecalho"> 
+          
+          <nav class ="navbar navbar-expand-lg navbar-dark" style="background-color:#ffff">
+          <a class ="navbar-brand" th:href="@{/index}">
+          <img src="/img/logotest.jpg"/>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div id ="navMobile" class="navbar-collapse collapse justify-content-end">
+          
+              
+          <a class="nav-iten nav-link btn-danger"  th:href="@{/}" >Sair</a>     
+           
+          </div>
+          
+         
+          </nav>
+          </header>  
+  
+ 
+ 
+
+  
+  <h4 class="cadastro" style="margin-top: 50px;margin-left: 70px">Cadastro de Funcionarios</h4> <!-- fata responsividade -->
+  <hr>
+  
+  
+  <div class="container-Form">
+  <form method="post" action="/editarFun" th:object="${pessoa}" >
+  <div class="row">
+  
+  
+  
+      <div class="col-md-6 form-group offset-md-3">
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('nome')}">
+    <label class="validation-message" th:errors="*{nome}"></label>
+  </div>     
+  <label>Nome:</label>
+  <input   placeholder="Ex: Maria Fernandes" th:field="*{nome}">
+  
+    </div>
+    
+    
+  </div>
+  
+
+   
+  <div class="row">
+      <div class="col-md-6 form-group offset-md-3">
+      
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('cpf')}">
+            <label class="validation-message" th:errors="*{cpf}"></label>
+  
+  </div>     
+  <label>CPF:</label>
+  <input  placeholder="Exemplo: 000.000.000-00 "  th:field="*{cpf}">
+    </div>
+  </div>
+  
+
+ <div class="row">
+      <div class="col-md-6 form-group offset-md-3">
+   
+   <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('rg')}">
+            <label class="validation-message" th:errors="*{rg}"></label>
+  
+  </div>     
+   
+  <label>RG:</label>
+  <input  placeholder="Exemplo: 000.000-00"  th:field="*{rg}">
+   </div>
+  </div>
+  
+
+  <div class="row">
+
+     <div class="col-md-6 form-group offset-md-3">
+     
+     
+     <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('rua')}">
+            <label class="validation-message" th:errors="*{rua}"></label>
+  
+  </div>     
+  
+  
+  
+  
+  
+   
+  <label>Rua:</label>
+  <input  placeholder="Exemplo: Rua Estrada Rj 14"  th:field="*{rua}">
+  
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="row">
+
+     <div class="col-md-6 form-group offset-md-3">
+     
+     
+     <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('numero')}">
+            <label class="validation-message" th:errors="*{numero}"></label>
+  
+  </div>     
+  <label>Numero:</label>
+  <input  placeholder="Exemplo: 270"  th:field="*{numero}">
+  
+    </div>
+  </div>
+  
+  
+
+  <div class="row">
+   <div class="col-md-6 form-group offset-md-3">
+   
+   <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('bairro')}">
+            <label class="validation-message" th:errors="*{bairro}"></label>
+  
+  </div>     
+  <label>Bairro:</label>
+  <input placeholder="Exemplo: Bairro Cicília"  th:field="*{bairro}">
+  
+   </div>
+  </div>
+  
+  
+ <div class="row">
+   <div class="col-md-6 form-group offset-md-3">
+   
+   <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('cep')}">
+            <label class="validation-message" th:errors="*{cep}"></label>
+  
+  </div>     
+  
+  <label>CEP:</label>
+  <input placeholder="Exemplo: 00000-000"  th:field="*{cep}">
+  
+   </div>
+  </div>
+  
+ 
+  <div class="row">
+   
+    <div class="col-md-6 form-group offset-md-3">
+    
+    <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('complemento')}">
+            <label class="validation-message" th:errors="*{complemento}"></label>  
+  </div>     
+  <label>Complemento:</label>
+  <input placeholder="Exemplo: casa 5"  th:field="*{complemento}">
+  
+   </div>
+  </div>
+  
+  
+  
+
+  <div class="row">
+     <div class="col-md-6 form-group offset-md-3">
+     
+     <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('telefone')}">
+            <label class="validation-message" th:errors="*{telefone}"></label>
+  
+  </div>     
+ 
+  <label>Telefone:</label>
+  <input placeholder="Exemplo: 0000-0000"  th:field="*{telefone}">
+  
+   </div>
+  </div>
+  
+  
+ 
+ 
+  
+  <div class="row">
+     <div class="col-md-6 form-group offset-md-3">
+ 
+ <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('celular')}">
+            <label class="validation-message" th:errors="*{celular}"></label>
+  
+  </div>     
+
+  <label>Celular:</label>
+  <input placeholder="Exemplo:(21) 00000-0000" th:field="*{celular}">
+  </div>
+  </div>
+  
+  
+  <div class="row">
+   <div class="col-md-6 form-group offset-md-3">
+   
+   
+   <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('email')}">
+            <label class="validation-message" th:errors="*{email}"></label>
+  
+  </div>     
+
+  <label>Email:</label>
+  <input placeholder="Exemplo: joãodaSilva@gmail.com" th:field="*{email}">
+  
+   </div>
+  </div>
+  
+  
+  
+  
+  
+  
+<div class="Conteiner-dataCadastro">
+   <div th:object="${funcionario}" >
+   
+  
+   
+ 
+    
+ 
+ <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('carteiraTrabalho')}">
+            <label class="validation-message" th:errors="*{carteiraTrabalho}"></label>
+  
+  </div>     
+
+  <label>Carteira de Trabalho:</label>
+  <input  th:field="*{carteiraTrabalho}">
+
+ 
+   
+   
+   
+    <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('dataAdmissao')}">
+            <label class="validation-message" th:errors="*{dataAdmissao}"></label>
+  
+  </div>   
+
+ <label>Data de Admissão:</label>
+ <input type="date" th:field="*{dataAdmissao}">
+</div> 
+ 
+</div>
+  
+  
+  
+ 
+
+<div class="row">
+<div class ="col-md-6 form-group offset-md-3">
+<button type="submit" class="btn-save btn-primary btn-salvar">Salvar</button>
+</div>
+</div>
+ 
+  </form>
+  </div>
+
+  
+  </section>
+  
+ 
+  
+  
+   <script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+   <script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+   
+   
+    </body> 
+ </html> 
+   

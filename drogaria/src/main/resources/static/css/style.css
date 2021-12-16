@@ -1,0 +1,291 @@
+@charset "ISO-8859-1";
+
+
+*{margin:0; padding: 0; box-sizing:border-box}
+
+nav {height: 150px;  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+   background:transparent;
+
+	
+
+	
+ }
+ 
+   img{
+ 
+  
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  
+  
+	
+ }
+ 
+
+.redimencionar-nav{
+	
+	margin-left: 350px;
+
+	
+	
+}
+.nav-item.dropdown{
+	
+	
+	margin-top: 8px;
+	padding: 10px;
+	padding-top: 1px;
+	
+	
+	
+	
+}
+
+.nav-item{
+	
+	
+	
+}
+
+
+
+
+a{cursor: pointer; }
+
+.neo-section{
+	
+	min-height: 700px;
+	background-size: cover !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	
+
+	
+}
+
+.container{
+
+	  display: inline-block;
+margin-right: 100x;
+
+
+	
+	
+}
+
+
+.fundo{
+	
+	
+	background-image: url(/img/fundotest3.jpg); 
+	background-repeat: no-repeat;
+	min-height: 700px;
+	background-size: cover !important;
+	background-position: center;
+	
+	
+}
+
+.nav-link{
+	
+	
+color:  black;	
+
+	
+}
+
+
+
+.btn.btn-primary{
+	
+	
+	background: #01579B;
+	font-size: 1.1em;
+	padding: 0;
+	height: 35px;
+	margin-top:5px;
+	width: 90px;
+
+}
+
+.btn-edit.btn-primary{
+	
+	background: #01579B;
+	font-size: 1.1em;
+	padding: 7px;
+	padding-left:14px;
+	padding-right:10px;
+	height: 10px;
+	
+	width: 100px ;
+	border-radius: 5px;
+
+		
+}
+
+
+
+.btn.btn-danger{
+	
+	background: #b90000;
+	font-size: 1.1em;
+	padding: 1px;
+	height: 35px;
+	width: 90px;
+	margin-top:12px;
+	
+	
+}
+
+
+.nav-link.btn-danger{
+	
+	
+	
+	background: #b90000;
+	
+    border-radius: 3px;
+    margin-left:30px;
+     
+	
+	
+}
+
+
+.btn-save.btn-primary{
+	
+	background: #01579B;
+	font-size: 1.1em;
+	padding: 0;
+	height: 35px;
+	margin-top:5px;
+	width: 90px;
+	border-radius: 5px;
+	
+	
+	
+}
+
+/*Responsividade*/
+
+@media screen and(max-width: 800px) {
+	
+	
+	
+	
+	nav {
+		width: 100%;
+		height: 100%;
+		
+		
+		
+	}
+	
+	 img{
+ 
+  margin-top:0;
+  margin-left:0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  
+  
+	
+ }
+
+	
+}
+
+
+
+
+
+
+.clear{clear:both;}
+.center{text-align: center}
+.neo-container{max-width: 1280px; padding:2% 2%; margin: 0 auto; }
+
+
+
+
+
+
+
+/*Responsividade*/
+
+@media screem and (max-width:600px){
+	
+	
+	form{width:100%}
+	form{height: 100%}
+	
+	
+	
+  }
+	
+
+
+
+form,
+label {
+  display: block;
+  padding: 1%;
+  
+ 
+}
+  .container-Form{
+  
+   width: 65%;
+  
+  
+  }
+
+
+form {
+
+  width: 100%;
+  
+  margin-left:0;
+
+
+  margin-top: 10px;
+  border-radius:10px; border: 1px solid #FAFAFA
+
+  
+  
+}
+
+input {
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 0%;
+  background: #ffffff; 
+  border-radius: 7px; font-size:15px; height: 35px; line-height: 50px; width:400px;
+  border: 2px solid #d4d4d4;
+  
+ 
+}
+
+.Conteiner-dataCadastro{
+
+ display: inline-block;
+ margin-left:220px;
+ border-radius: 7px; font-size:15px; height: 35px;  width:400px;
+
+ 
+ 
+	
+	
+}
+
+
+.btn-save.btn-primary.btn-salvar{
+	
+	
+	background: #01579B;
+	font-size: 1.1em;
+	padding: 0;
+	height: 40px;
+	margin-top:30px;
+	width: 20%;
+}

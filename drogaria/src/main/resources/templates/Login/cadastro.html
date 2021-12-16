@@ -1,0 +1,71 @@
+ <!DOCTYPE html> 
+ <html lang="pt-br" xmlns:th="http://www.thymeleaf.org"> 
+ <head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet"  href="/webjars/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" th:href="@{assets/bootstrap.min.css}">
+ <title>Pessoa</title> 
+    <meta name="autor" content="Jameplay"/>
+    
+     <link rel="stylesheet" href="css/cadastroUsuario.css">
+      
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    
+ 
+ </head> 
+ 
+ 
+ <body class="fundo">
+ 
+ <div th:replace="fragmentos/fragmentos :: cabecalho"></div>  
+ <div class ="Login-Form">
+ 
+ 
+ <div class= "container">
+ 
+ <div class="main-div">
+ 
+ <div class="texto-header">
+ <h5 class=cadastro style="margin-top: 30px;margin-left: 25px" >Cadastro de Usuario</h5>
+ <hr>
+ 
+ <p style="margin-left: 20px; font-size: 1.01em;" >Crie um Usuario no Sistema</p>
+ 
+ </div>
+ 
+ <form method="post" action="salvarUsuario" th:object="${usuario}">
+ 
+ <div class="alert alert-danger" role="alert" th:if="${msg}">
+ <strong th:text= "${msg}"></strong>
+ 
+ </div>
+ 
+ <div class="form-group">
+ <input type=text  th:field="*{username}" class="form-control"
+     placeholder="username">
+ </div>
+ 
+  <div class="form-group">
+ <input  type="password" th:field="*{senha}"  class="form-control" 
+     placeholder="insira sua senha">
+ </div>
+ 
+ <button type="submit" class="btn-save btn-primary">ENTRAR</button>
+ </form>
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ </div>
+ 
+ 
+ <script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+   
+ 
+ </body> 
+ </html> 

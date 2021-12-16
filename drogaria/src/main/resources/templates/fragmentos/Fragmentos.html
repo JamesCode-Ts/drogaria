@@ -1,0 +1,146 @@
+ <!DOCTYPE html> 
+ <html lang="pt-br" xmlns:th="http://www.thymeleaf.org"> 
+ <head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- BOOTSTRAP -->
+    
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+   <!-- ESTILOS PARA ESTA PÁGINA -->
+    <!-- Nesse caso, este estilo é apenas para inserir imagens -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+ <link rel="stylesheet"  href="/webjars/bootstrap/css/bootstrap.min.css">
+  <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+ <title>Drogaria</title> 
+    <meta name="autor" content="Jameplay"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    
+  
+ </head>
+
+
+          <!-- Cabeçalho -->
+          
+           <header th:fragment="cabecalho"> 
+ <nav class="navbar navbar-expand-lg navbar-light ">
+  <a class ="navbar-brand" th:href="@{/index}">
+          <img src="/img/logotest.jpg">
+          </a>
+       
+			  <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class="collapse navbar-collapse  justify-content-end" id ="navMobile">
+
+
+				<ul class="nav navbar-nav navbar-right">
+    
+
+      <li class="nav-item ">
+        <a class="nav-link"  th:href="@{index}">Home</a> 
+         </li>
+       
+     <!--   <li class="nav-item">
+        <a class="nav-link"th:href="@{pessoas-adicionadas}">Pesquisar Pesssoa</a>    
+      </li>
+       -->
+      
+      
+      
+        <li class="nav-item dropdown">
+        
+           <a class="nav-item dropdown-toggle" data-toggle= "dropdown" id="navDrop">Cadastar</a>    
+        
+        
+        <div class="dropdown-menu">
+        
+         <a class="dropdown-item"  th:href="@{formCliente}">Clientes</a>
+        <a class="dropdown-item"  th:href="@{cadastroFun}">Funcionarios</a>
+        
+        </div>
+      
+      
+       <li class="nav-item dropdown">
+        
+           <a class="nav-item dropdown-toggle" data-toggle= "dropdown" id="navDrop">Listar</a>    
+        
+        
+        <div class="dropdown-menu">
+        
+         <a class="dropdown-item"  th:href="@{clientes-adicionadas}">Clientes</a>
+        <a class="dropdown-item"  th:href="@{Funcionarios-adicionados}">Funcionarios</a>
+        
+        </div>
+      
+      
+        
+          
+         
+        <li class="nav-item dropdown">
+        
+           <a class="nav-item dropdown-toggle" data-toggle= "dropdown" id="navDrop">Produtos</a>    
+        
+        
+        <div class="dropdown-menu">
+        
+        
+        <a class="dropdown-item"  th:href="@{listagem-produtos}">Listagem</a>
+                <a class="dropdown-item"  th:href="@{inserirProdutos}">Cadastrar</a>
+        
+        
+        </div>
+        
+        
+        <li class="nav-item dropdown">
+        
+           <a class="nav-item dropdown-toggle" data-toggle= "dropdown" id="navDrop">Usuáro</a>   
+           
+               <div class="dropdown-menu">
+        <a class="nav-link" th:href="@{cadastro}">Cadastar</a> 
+        </div>
+      </li>
+      
+        
+        
+      
+             <li class="nav-item">
+      <a class="nav-item nav-link btn-danger"  th:href="@{/}">Sair</a>    
+      </li> 
+      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+         </ul>
+      
+      </div>
+       
+
+      
+    
+        
+     
+      
+          </nav>
+          </header>
+   
+             
+   
+           <script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+            <script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+           
+            
+            
+         
+           </html>

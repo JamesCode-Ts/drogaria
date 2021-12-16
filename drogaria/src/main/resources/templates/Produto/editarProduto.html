@@ -1,0 +1,161 @@
+ <!DOCTYPE html> 
+ <html lang="pt-br" xmlns:th="http://www.thymeleaf.org"> 
+ <head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet"  href="/webjars/bootstrap/css/bootstrap.min.css">
+ <title>Cadastro - Produto</title> 
+    <meta name="autor" content="Jameplay"/>
+    <link rel="stylesheet" href="/css/cadastroProduto.css">
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    
+ 
+ </head> 
+ 
+  <body>
+    
+  <header th:fragment="cabecalho"> 
+          
+          <nav class ="navbar navbar-expand-lg navbar-dark" style="background-color:#ffff">
+          <a class ="navbar-brand" th:href="@{/index}">
+          <img src="/img/logotest.jpg"/>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div id ="navMobile" class="navbar-collapse collapse justify-content-end">
+          
+              
+          <a class="nav-iten nav-link btn-danger"  th:href="@{/}" >Sair</a>     
+           
+          </div>
+          
+         
+          </nav>
+          </header>  
+  
+  
+   <section class ="neo-section" style="background-image: url(#)">
+             
+            <div class="sombra"></div>
+  
+
+  
+  <h5 class="cadastro" style="margin-top: 50px;margin-left: 70px">Cadastro - Produtos</h5> <!-- fata responsividade -->
+  <hr>
+  
+  
+  <div class="container-Form">
+  <form method="post" action="/editarProduto" th:object="${produto}" >
+  <div class="row">
+  
+  
+    <div class="row">
+      <div class="col-md-6 form-group offset-md-3">
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('descricao')}">
+    <label class="validation-message" th:errors="*{descricao}"></label>
+  </div>     
+  <label>Descrição:</label>
+  <input  th:field="*{descricao}">
+  
+    </div>
+    
+    
+  </div>
+  
+   
+  <div class="row">
+ <div class="col-md-6 form-group offset-md-3">
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('quantidade')}">
+    <label class="validation-message" th:errors="*{quantidade}"></label>
+  </div>     
+  <label>Quantidade:</label>
+  <input type="number" th:field="*{quantidade}">
+  
+    </div>
+    
+    
+  </div>
+ 
+  <div class="row">
+ <div class="col-md-6 form-group offset-md-3">
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('preco')}">
+    <label class="validation-message" th:errors="*{preco}"></label>
+  </div>     
+  <label>Preço:</label>
+  <input  th:field="*{preco}">
+  
+    </div>
+    
+    
+  </div>
+  
+  
+  
+       <div class="row">
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('dataDeValidade')}">
+    <label class="validation-message" th:errors="*{dataDeValidade}"></label>
+  </div>     
+  <label class="label-data">Data de validade:</label>
+  <input class="data" type="date" th:field="*{dataDeValidade}">
+  
+    </div>
+    
+    
+  </div>
+  
+ 
+  
+  
+  
+   
+  <div  th:object="${categoria}">
+  
+    <div class="row">
+      <div class="col-md-6 form-group offset-md-3">
+      
+        <div class ="alert alert-danger" role="alert" th:if="${#fields.hasErrors('nome')}">
+    <label class="validation-message" th:errors="*{nome}"></label>
+  </div>     
+  <label>Categoria:</label>
+  <input  th:field="*{nome}">
+  
+    </div>
+    </div>
+  </div>
+  
+  
+  
+   <div class="alert alert-success" role="alert" th:if="${msg}">
+ <strong th:text= "${msg}"></strong>
+ 
+ </div>
+ 
+
+<div class="row">
+<div class ="col-md-6 form-group offset-md-3">
+<button type="submit" class="btn-save btn-primary">Salvar</button>
+</div>
+</div>
+ 
+ 
+ 
+  </form>
+  </div>
+
+  
+  </section>
+  
+  
+   <script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+   <script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+   
+   
+    </body> 
+ </html> 
+   

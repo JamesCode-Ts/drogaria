@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+
+
+
+.Login-Form{min-height: 800px; margin-top: 200px;}
+
+
+nav {height: 150px;  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+  img{
+  
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  
+	
+ }
+
+
+a{cursor: pointer; }
+
+
+.fundo{
+	
+	
+	background-image: url(/img/fundotest2.jpg); 
+	background-repeat: no-repeat;
+	min-height: 700px;
+	background-size: cover !important;
+	background-position: center;
+	
+	
+}
+
+
+
+.Login-Form{display:block; align-items: center; flex-direction: row; flex-wrap:wrap; 
+justify-content: center; text-align: center;  margin-top: 80px;  }
+
+
+.main-div{background: transparent; border-radius:  5px; margin: 0 auto; max-width: 40%; padding: 50px 70px;
+
+	
+
+box-shadow: 1px 3px 3px 3px rgba(0.1, 0.1, 0.1, 0.2);
+background: transparent;
+	
+
+}
+
+.texto-header{
+	
+
+}
+
+
+.form-control{background: #f7f7f7; border-radius: 7px; font-size:15px; height: 50px; line-height: 50px;
+border: 2px solid #d4d4d4}
+
+.form-group{margin: 10px}
+
+
+
+.btn.btn-primary{
+	
+	
+	background: #00274f;
+	font-size: 1.1em;
+	padding: 0;
+	height: 40px;
+	margin-top:5px;
+	width: 95%;
+}

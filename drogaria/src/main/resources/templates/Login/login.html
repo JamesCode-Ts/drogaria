@@ -1,0 +1,95 @@
+ <!DOCTYPE html> 
+ <html lang="pt-br" xmlns:th="http://www.thymeleaf.org"> 
+ <head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet"  href="/webjars/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" th:href="@{assets/bootstrap.min.css}">
+ <title>Login</title> 
+    <meta name="autor" content="Jameplay"/>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    
+ 
+ </head> 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ <body class="fundo">
+ 
+ 
+    <nav class ="navbar navbar-expand-lg navbar-dark" >
+          <a class ="navbar-brand" th:href="@{/index}">
+          <img src="/img/logotest.jpg"/>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div id ="navMobile" class="navbar-collapse collapse justify-content-end">
+          
+         
+           
+          </div>
+          
+         
+          </nav>
+ 
+ 
+ 
+    <section class ="neo-section" >
+ 
+ <div class ="Login-Form">
+ 
+ 
+ <div class= "conteiner">
+ 
+ <div class="main-div">
+ 
+ <div class="texto-header">
+ <h2>Login</h2>
+ 
+ <p>Insira suas credencias para efetuar login no Sistema</p>
+ 
+ </div>
+ 
+ <form method="post" action="/login" th:object="${usuario}">
+ 
+ <div class="alert alert-danger" role="alert" th:if="${msg}">
+ <strong th:text= "${msg}"></strong>
+ 
+ </div>
+ 
+ <div class="form-group">
+ <input type=text  th:field="*{username}" class="form-control"
+     placeholder="username">
+ </div>
+ 
+  <div class="form-group">
+ <input  type="password" th:field="*{senha}"  class="form-control" 
+     placeholder="insira sua senha">
+ </div>
+ 
+ <button type="submit" class="btn btn-primary">ENTRAR</button>
+ </form>
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ </div>
+ 
+ </section>
+ <script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="webjars/bootstrap/js/bootstrap.min.js"></script>
+   
+ 
+ </body> 
+ </html> 
