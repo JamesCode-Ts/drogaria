@@ -6,6 +6,8 @@ A proposta do projeto é destinada a uma rede de drogaria ou uma local.
 
 O Banco de Dados tem a função de armazenar os atributos das entidades o qual estão na modelagem do Sistema.
 
+Uma versão aprimorada poderá ser implementada.
+
 Modelgem do Sistema 
 
 ![ModelagemFinal](https://user-images.githubusercontent.com/63932833/146475894-fbe8c0ec-8c65-4c14-b73d-9500762950f8.png)
