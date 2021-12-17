@@ -22,21 +22,41 @@ Front-end : Tela de Login
 
 
 
-Representação de um armazenamento ao Banco de Dados
+Front-end : Representação de um armazenamento ao Banco de Dados 
+
+
+
+![cadrastroProduto](https://user-images.githubusercontent.com/63932833/146476311-17f56baa-3738-48be-8aac-0e0952485c4f.png)
+
+
+
+
+Front-end : Listagem 
+
+![listProdutos](https://user-images.githubusercontent.com/63932833/146476378-324d2d9f-41bf-4a98-b41a-5c72198e70e6.png)
 
 
 
 
 
+Back-and:
 
+* Java
+* Mysql
 
+Front-and:
 
+* Html
+* Css
+* Bootstrap
 
+Tecnologias:
 
-
-
-
-
+* Spring Boot
+* Hibernate
+* Maven
+* Dev-Tools
+* Thymeleaf
 
 
 
