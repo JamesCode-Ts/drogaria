@@ -94,21 +94,11 @@ public class FuncionarioController {
 		
 		 ModelAndView mv = new ModelAndView();
 		  mv.setViewName("Funcionario/editarFun");
-		// Corrigir o problema de retorno dos valores dos atributos
-		  
-		   Funcionario funcionario = funcionarioRepository.getById(codigo);
-		   // Pessoa pessoa = pessoaRepository.getById(codigo); 
-		 
-		     mv.addObject("pessoa", new Pessoa());
-		     mv.addObject("funcionario", funcionario);
+	      Funcionario funcionario = funcionarioRepository.getById(codigo);
+	      mv.addObject("pessoa", new Pessoa());
+		  mv.addObject("funcionario", funcionario);
 		     
-		   //  funcionarioRepository.deleteById(codigo);
-		 
-		
-		
-		 
-		 
-		 return mv;
+		     return mv;
 	}
 	
 

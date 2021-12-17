@@ -83,48 +83,22 @@ public class ClienteController {
 		return mv;	
 	}
 	
-	
+	/* As chaves primárias tem que possuir o mesmo valor */
 	
 	@GetMapping("/editarCliente/{codigo}")
 	public ModelAndView alterar(@PathVariable("codigo") Short codigo){
 		
 		 ModelAndView mv = new ModelAndView();
-		 
-		  mv.setViewName("Cliente/editarCliente");
+		 mv.setViewName("Cliente/editarCliente");
 		
-		  // solução provisória, para retornar os valores dos atributos no formulário.
-		  // Funciona apenas se a chaves primárias tiverem o mesmo valor.
-
-		// Pessoa pessoa = pessoaRepository.getById(codigo);
+	
 		 Cliente cliente = clienteRepository.getById(codigo);
 	
-		 
-		 
-		// Pessoa pessoa = new Pessoa();	 
-	//	Short pessoa = cliente.getPessoa().getCodigo();
-		 
-		
-		 
 		    mv.addObject("pessoa", new Pessoa());
-			
-			
-		     mv.addObject("cliente",cliente);
+			mv.addObject("cliente",cliente);
 		         	     
-		  
-		    // pessoaRepository.deleteById(codigo);
-		     // Bug, ao carregar a pagina ele retornar os valores dos atributos,
-		     // Mas também deleta o id atual, se voltar sem chamar o post a pagina não vai aparecer.
-		     //Pois o mesmo foi deletado, Para resolver basta remover o  clienteRepository.deleteById(codigo);
-		     // Mas não vai atualizar automaticamente quando chamar um post, ou seja, vai ter que remover manualmente.
-		     // Vantagem deleta os dados antigos antes da editção automaticamente.
-		     // Desvantagem já foi citada.
 		
-		 
-		
-		
-		 
-		 
-		 return mv;
+		    return mv;
 	}
 	
 	@PostMapping("/editarCliente")
@@ -146,16 +120,12 @@ public class ClienteController {
 	
 	
 	
-	
-	
 	@GetMapping("excluirCliente/{codigo}")
 	public ModelAndView  excluirCliente(@PathVariable("codigo") Short codigo){	
 		ModelAndView mv = new ModelAndView();
-		
-      
 		clienteRepository.deleteById(codigo); 
-	
-		mv.setViewName("redirect:/clientes-adicionadas");
+	    mv.setViewName("redirect:/clientes-adicionadas");
+	    
 		return mv;
 		
 		
