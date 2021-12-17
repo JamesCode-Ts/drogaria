@@ -1,4 +1,4 @@
-# drogaria
+# Drogaria
 Projeto Full-Stack de um Sistema desenvolvido em Java Web.
 
 
@@ -58,11 +58,3 @@ Tecnologias:
 * Dev-Tools
 * Thymeleaf
 
-
-
-
-A linguagem que foi implementada no back-and foi Java.
-As tecnologias que foram utilizadas no desenvolvimento foram
-Spring Boot entre outras.
-
-Para o front-and utilizei HTML, CSS e componentes do Bootstrap
