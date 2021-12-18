@@ -63,3 +63,10 @@ Tecnologias:
 * Dev-Tools
 * Thymeleaf
 
+Pré-Requisitos
+
+* Spring Tool Suite 4 
+* Mysql Workbench
+
+
+
