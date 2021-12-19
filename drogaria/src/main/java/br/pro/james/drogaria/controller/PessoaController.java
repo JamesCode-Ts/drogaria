@@ -66,7 +66,7 @@ public class PessoaController {
 
 		return mv;	
 	}
-	// Problema ao editar, duplica
+
 	
 	@GetMapping("/editar/{codigo}")
 	public ModelAndView alterar(@PathVariable("codigo") Short codigo){
@@ -131,9 +131,6 @@ return mv;
 		
 		
 	}
-	
-	
-	
 	
 	
 	

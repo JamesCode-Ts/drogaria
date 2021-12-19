@@ -23,6 +23,22 @@ background-image: url(/img/fundo.jpg);
  }
 
 
+.nav-item.dropdown{
+	
+	
+	margin-top: 8px;
+	padding: 10px;
+	padding-top: 1px;
+	
+	
+	
+	
+}
+
+
+
+a{cursor: pointer; }
+
 .container-Form{
 	
   width: 150px;	
@@ -40,6 +56,8 @@ input {
   
  
 }
+
+
 
 .label-data{
 	
@@ -75,18 +93,14 @@ margin-left:70px;
 
 
 
+.nav-link{
+	
+	
+color:  black;	
 
-.nav-item.dropdown{
-	
-	
-	margin-top: 8px;
-	padding: 10px;
-	padding-top: 1px;
-	
-	
-	
 	
 }
+
 
 
 
@@ -97,7 +111,7 @@ margin-left:70px;
 	background: #b90000;
 	
     border-radius: 3px;
-    margin-left:200px;
+    margin-left:30px;
      
 	
 	

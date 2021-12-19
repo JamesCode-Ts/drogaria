@@ -24,6 +24,9 @@ import br.pro.james.drogaria.service.CategoriaService;
 @RequestMapping("categorias")
 public class CategoriaController {
 	
+	
+	/* Classe feita apenas para testar os métodos sem precisar do Front-and*/
+	
 	@Autowired
 	private CategoriaService categoriaService;  // renomeou 
 	

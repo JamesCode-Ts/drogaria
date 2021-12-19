@@ -28,6 +28,22 @@ a{cursor: pointer; }
 	
 }
 
+
+
+
+.nav-link.btn-danger{
+	
+	
+	
+	background: #b90000;
+	
+    border-radius: 3px;
+    margin-left:30px;
+     
+	
+	
+}
+
 .nav-item.dropdown{
 	
 	
@@ -42,6 +58,7 @@ a{cursor: pointer; }
 
 
 
+
 .nav-link.btn-danger{
 	
 	
@@ -49,7 +66,7 @@ a{cursor: pointer; }
 	background: #b90000;
 	
     border-radius: 3px;
-    margin-left:200px;
+    margin-left:30px;
      
 	
 	
