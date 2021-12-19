@@ -125,7 +125,19 @@ color:  black;
 		
 }
 
-
+.btn-nav.nav-item.nav-link.btn-danger{
+	
+	
+	
+	background: #b90000;
+    border-radius: 3px;
+    margin-left:30px;
+    height: 45px;
+    width: 50px;
+    color: white;
+    
+	
+}
 
 .btn.btn-danger{
 	
@@ -140,16 +152,16 @@ color:  black;
 }
 
 
-.nav-link.btn-danger{
-	
+
+
+
+.nav-item.btn-danger{
 	
 	
 	background: #b90000;
 	
     border-radius: 3px;
     margin-left:30px;
-     
-	
 	
 }
 

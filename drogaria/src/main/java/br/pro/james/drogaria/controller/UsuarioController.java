@@ -75,7 +75,7 @@ public ModelAndView cadastrar(){
 	ModelAndView mv = new ModelAndView();
 	usuarioservice.salvarUsuario(usuario);
 
-	mv.setViewName("redirect:/index");
+	mv.setViewName("redirect:/");
 	
 	
 	return mv;
@@ -107,12 +107,26 @@ public ModelAndView cadastrar(){
         	
         	
         } else {
-        	session.setAttribute("usuarioLOgado", userLogin);
+        	session.setAttribute("usuarioLogado", userLogin);
         	return index();
         }
         
       
         return mv;
     
-    }}
+    }
+    
+@PostMapping("/logout")
+public ModelAndView logout(HttpSession session) {
+	
+	
+	session.invalidate();
+	return login();
+	
+	
+}
+
+
+
+}
 

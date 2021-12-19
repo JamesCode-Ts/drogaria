@@ -15,7 +15,10 @@
  <body class="fundo">
  
 
- 
+ <div style="margin: 0; text-align: center" class="alert alert alert-info" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Seja Bem Vindo:  <span th:text="${session.usuarioLogado.username}"></span></strong> 
+</div>
  
  <div th:replace="fragmentos/fragmentos :: cabecalho"></div>         
          <section class ="neo-section" >
