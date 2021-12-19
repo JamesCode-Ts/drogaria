@@ -31,14 +31,14 @@ Front-end : Representação de um armazenamento ao Banco de Dados
 
 
 
-![cadrastroProduto](https://user-images.githubusercontent.com/63932833/146476311-17f56baa-3738-48be-8aac-0e0952485c4f.png)
+![produtoCadastroAl](https://user-images.githubusercontent.com/63932833/146659241-3528fd36-26b6-4b97-993f-eca4414f66bc.png)
 
 
 
 
 Front-end : Listagem 
 
-![listProdutos](https://user-images.githubusercontent.com/63932833/146476378-324d2d9f-41bf-4a98-b41a-5c72198e70e6.png)
+![listagemProdutoAl](https://user-images.githubusercontent.com/63932833/146659245-a49a80f3-ac2d-4cbc-bb92-441279d773c2.png)
 
 
 
