@@ -17,14 +17,9 @@ Modelgem do Sistema
 
 
 
-
-
 Front-end : Tela de Login
 
 ![front-login](https://user-images.githubusercontent.com/63932833/146476026-d2595d61-58cd-4cca-b6bc-19acc51cdf74.png)
-
-
-
 
 
 Front-end : Representação de um armazenamento ao Banco de Dados 
@@ -34,39 +29,66 @@ Front-end : Representação de um armazenamento ao Banco de Dados
 ![produtoCadastroAl](https://user-images.githubusercontent.com/63932833/146659241-3528fd36-26b6-4b97-993f-eca4414f66bc.png)
 
 
-
-
 Front-end : Listagem 
 
 ![listagemProdutoAl](https://user-images.githubusercontent.com/63932833/146659245-a49a80f3-ac2d-4cbc-bb92-441279d773c2.png)
 
 
 
+## Modo de Uso
+
+Para usar este projeto, siga estas etapas:
+
+1. Clone este repositório para o seu computador:
+
+```bash
+git clone https://github.com/JamesCode-Ts/API-Restaurante-
+```
+
+2. Configuração do Ambiente Java com SDKMAN!
+
+```bash
+curl -s "https://get.sdkman.io" | bash
+sdk install java 11.0.21-tem  
+sdk use java 11.0.21-tem  
+```
+3. Instalação do maven
+```bash
+sdk install maven 
+```
+
+4. Instale e configure o mysql de acordo com seu sistema Operacional.
 
 
-Back-and:
+5. Crie um banco de dados de acordo com o que esta espeficado no application.properties.
 
-* Java
-* Mysql
+6. Execute a aplicação.
 
-Front-and:
 
-* Html
-* Css
-* Bootstrap
+### Tecnologias Utilizadas:
 
-Tecnologias:
+* #### Java
 
-* Spring Boot
-* Hibernate
-* Maven
-* Dev-Tools
-* Thymeleaf
+* #### SpringBoot
 
-Pré-Requisitos
+* #### Spring Security
 
-* Spring Tool Suite 4 
-* Mysql Workbench
+* #### Mysql
+
+* #### Devtools
+
+* #### Thymeleaf
+
+* #### MAVEN
+
+* #### Hibernate
+
+### Front-and:
+
+* ### Html
+* ### Css
+* ### Bootstrap
+
 
 
 
