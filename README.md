@@ -44,7 +44,7 @@ Para usar este projeto, siga estas etapas:
 1. Clone este repositório para o seu computador:
 
 ```bash
-git clone https://github.com/JamesCode-Ts/API-Restaurante-
+git clone https://github.com/JamesCode-Ts/drogaria
 ```
 
 2. Configuração do Ambiente Java com SDKMAN!
